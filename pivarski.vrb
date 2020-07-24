@@ -1,0 +1,22 @@
+\frametitle {Problem \#2 with file I/O}
+
+About half of the files I created (with either method) can't be read back.
+
+\scriptsize
+\begin{verbatim}
+[HIPAlignmentAlgorithm] constructed.
+%MSG
+%MSG-e FwkJob:  PoolSource:source{*ctor*} 22-Aug-2007 18:31:09 CEST pre-events
+<FrameworkError ExitStatus="8002" Type="StdLibException" >
+  Standard library exception caught in cmsRun
+St9bad_alloc
+</FrameworkError>
+
+%MSG
+%MSG-s StdLibException:  PoolSource:source{*ctor*} 22-Aug-2007 18:31:09 CEST  pre-events
+Standard library exception caught in cmsRun
+St9bad_alloc
+\end{verbatim}
+
+\vfill \normalsize
+Standard library allocation error?  (No version mismatch)
